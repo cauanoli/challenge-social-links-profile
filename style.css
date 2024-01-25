@@ -45,14 +45,13 @@ a {
 .center {
   display: grid;
   place-items: center;
-  min-height: 80svh;
-  min-height: 80;
   padding: 1rem;
+  height: 90vh;
 }
 
 .profile {
   background-color: var(--bg-gray);
-  padding: 2rem;
+  padding: 2rem 3rem;
   border-radius: var(--border-radius-md);
   display: flex;
   flex-direction: column;
