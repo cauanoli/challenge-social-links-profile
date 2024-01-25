@@ -1,0 +1,111 @@
+@import url("./reset.css");
+
+@font-face {
+  font-family: Inter;
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+  font-weight: 100 900;
+}
+
+:root {
+  --night: #141414ff;
+  --night-2: #1f1f1fff;
+  --jet: #333333ff;
+  --white: #fafafa;
+  --battleship-gray: #929292ff;
+  --lime: #bef02aff;
+
+  --color-highlight: var(--lime);
+  --color-text: var(--white);
+  --color-text-secondary: var(--battleship-gray);
+  --color-text-dark: var(--night);
+
+  --bg-dark: var(--night);
+  --bg-gray: var(--night-2);
+  --bg-gray-light: var(--jet);
+  --bg-highlight: var(--color-highlight);
+
+  --border-radius-md: 12px;
+  --border-radius-sm: 8px;
+  --flex-gap-lg: 2rem;
+  --flex-gap-md: 1rem;
+  --flex-gap-sm: 0.5rem;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--color-text);
+  font-family: Inter, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+  min-height: 80svh;
+  min-height: 80;
+  padding: 1rem;
+}
+
+.profile {
+  background-color: var(--bg-gray);
+  padding: 2rem;
+  border-radius: var(--border-radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--flex-gap-lg);
+  align-items: center;
+}
+
+.profile__image {
+  border-radius: 100%;
+  width: 96px;
+}
+
+.profile__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--flex-gap-sm);
+}
+
+.profile__name {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.profile__location {
+  color: var(--color-highlight);
+  font-weight: 700;
+  text-align: center;
+}
+
+.profile__description {
+  color: var(--color-text-secondary);
+}
+
+.profile__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--flex-gap-md);
+  width: 100%;
+}
+
+.profile__link {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 1rem;
+  text-align: center;
+  display: block;
+
+  background-color: var(--bg-gray-light);
+  border-radius: var(--border-radius-sm);
+}
+
+.profile__link:hover {
+  background-color: var(--bg-highlight);
+  color: var(--color-text-dark);
+}
