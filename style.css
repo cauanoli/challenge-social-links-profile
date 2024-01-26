@@ -108,3 +108,13 @@ a {
   background-color: var(--bg-highlight);
   color: var(--color-text-dark);
 }
+
+footer {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--color-highlight);
+  padding-top: 1 rem;
+}
